@@ -1,5 +1,5 @@
 import MobileNav from "../components/MobileNav";
-import logoapp from "./logoapp.png";
+import logo from "../assets/img/logo.png";
 
 const Header = () => (
   <header className="flex bg-green-800 items-center justify-between p-4">
@@ -7,7 +7,7 @@ const Header = () => (
       <a href="/" aria-label="eGreens">
         <div className="flex items-center justify-between">
           <div className="mr-3">
-            <img src={logoapp} className="w-12 h-12" alt="Logo eGreens" />
+            <img src={logo} className="w-12 h-12" alt="Logo eGreens" />
           </div>
         </div>
       </a>
