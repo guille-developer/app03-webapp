@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import SeedsCollection from "./components/SeedsColection";
+import TrayList from "./components/TrayList";
 import { Layout } from "./sections";
 
 function App() {
@@ -8,8 +9,10 @@ function App() {
     <Layout>
       {/* Hero section */}
 
-
-
+    < SeedsCollection >
+      </SeedsCollection>
+< TrayList>
+</TrayList>
       <section className="flex flex-col justify-center items-center text-center space-y-10 pt-12 sm:pt-24 md:pt-32">
         {/* Headlines */}
         

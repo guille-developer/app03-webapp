@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
 import Seed from './Seed';
+import Chia from "../assets/img/Chia.jpg"
+import Flax from "../assets/img/Flax.jpg"
+import Lentils from "../assets/img/Lentils.jpg"
+import Weat from "../assets/img/Weat.jpg"
+
 // http://farmtechlat3.us-south.cf.appdomain.cloud/api/v1/seeds
+let seedsImages = {
+    "Flax": Flax,
+    "Chia": Chia,
+    "Lentils": Lentils, "Weat": Weat,
+};
 
 
 class SeedsCollection extends Component {
-
     componentDidMount() {
         const apiUrl = 'https://farmtechlat3.us-south.cf.appdomain.cloud/api/v1/seeds';
         fetch(apiUrl)
@@ -25,7 +34,7 @@ class SeedsCollection extends Component {
 
 
 
-            {this.state.seeds.map(seed => <Seed title={seed.seedName} img="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/297638_2200-800x1200.jpg" />)
+            {this.state.seeds.map(seed => <Seed title={seed.seedName} img={seedsImages[seed.seedName]} />)
             }
 
 

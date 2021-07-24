@@ -14,7 +14,7 @@ class Seed extends Component {
                 <div>
 
                     <p className="text-center">{this.props.title}</p>
-                    <img className="rounded h-24" src={this.props.img}>
+                    <img className="rounded h-24 w-18" src={this.props.img}>
                     </img>
                 </div>
 
