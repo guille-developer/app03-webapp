@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import headerNavLinks from "../data/headerNavLinks";
 
 const MobileNav = () => {
@@ -59,13 +60,13 @@ const MobileNav = () => {
         <nav className="fixed h-full mt-8">
           {headerNavLinks.map(link => (
             <div key={link.title} className="px-12 py-4">
-              <a
-                href={link.href}
+              <Link
+                to={link.href}
                 className="text-2xl font-bold tracking-widest text-gray-900 dark:text-gray-100"
                 onClick={onToggleNav}
               >
                 {link.title}
-              </a>
+              </Link>
             </div>
           ))}
         </nav>
