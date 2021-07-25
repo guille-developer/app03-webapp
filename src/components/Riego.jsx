@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import RiegoElement from './RiegoElement';
 
 
 
@@ -8,12 +9,10 @@ class RiegoComponentsList extends Component {
         return (<>
 
 
-            <div className="rounded container border-gray border-2 mt-12 m-auto bg-gray-100 w-10/12 h-5/12">
 
 
-
+                <RiegoElement></RiegoElement>
                 
-            </div>
 
         </>);
     }
