@@ -15,7 +15,6 @@ function App() {
 
     <BrowserRouter>
       <Layout>
-    < RiegoComponentsList > < /RiegoComponentsList>
 
         <Switch>
           <Route path="/pagina1">
