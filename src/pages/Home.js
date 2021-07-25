@@ -19,13 +19,9 @@ const Home = ({ user = "prueba" }) => {
         {/* Headlines */}
         <div className="space-y-4 max-w-4xl mx-auto">
           <h1 className="font-bold">
-            <span className=" text-green-600 block">Bievenido! {user}</span>
+            <span className=" text-green-600 block">Welcome! {user}</span>
           </h1>
-          <SeedsCollection />
-          <TrayList />
-          <NewCultureForm />
-          <EditCulture />
-          <RiegoComponentsList />
+          
         </div>
       </section>
     </>

@@ -41,9 +41,9 @@ class Tray extends Component {
 
 
                     <div className="text-center ">
-                        <button className="rounded p-2 m-10 text-white bg-gradient-to-r from-green-400  to-green-800">
+                        <a href="/newCulture"> <button  className="rounded p-2 m-10 text-white bg-gradient-to-r from-green-400  to-green-800">
                             New Culture
-                        </button>
+                        </button></a>
                     </div>
 
                 </div>

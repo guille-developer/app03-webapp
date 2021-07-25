@@ -33,14 +33,14 @@ class NewCultureForm extends Component {
 
 
                         <div className="text-center ">
-                            <button className="rounded p-2 m-10 text-white bg-gradient-to-r from-green-400  to-green-800">
+                            <a href="/pagina1"> <button type="submit" className="rounded p-2 m-10 text-white bg-gradient-to-r from-green-400  to-green-800">
                                 Save
-                            </button>
+                            </button></a>
                         </div>
                         <div className="text-center ">
-                            <button type="submit" className="rounded p-2  text-white bg-gradient-to-r from-green-400  to-green-800">
-                                Cancel
-                            </button>
+                            <a href="/pagina1"> <button type="button" className="rounded p-2 m-10 text-white bg-gradient-to-r from-green-400  to-green-800">
+                               Cancel
+                            </button></a>
                         </div>
                     </div>     </form >     </div>);
     }
