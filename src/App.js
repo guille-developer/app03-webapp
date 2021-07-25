@@ -5,7 +5,11 @@ import Login from "./ibmlogin/Login";
 import Pagina1 from "./pages/Pagina1";
 import Pagina2 from "./pages/Pagina2";
 import SeedsCollection from "./components/SeedsColection";
+import TrayList from "./components/TrayList";
 import { Layout } from "./sections";
+import NewCultureForm from "./components/NewCultureForm";
+import EditCultureForm from "./components/EditCulture";
+import RiegoComponentsList from "./components/Riego";
 
 function App() {
   const [token, setToken] = useState();
@@ -15,8 +19,10 @@ function App() {
   }
 
   return (
+
     <BrowserRouter>
       <Layout>
+
         <Switch>
           <Route path="/pagina1">
             <Pagina1 />
