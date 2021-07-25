@@ -1,14 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Pagina1 = () => {
   const [resultado, setResultado] = useState();
 
-  fetch("http://farmtechlat3.us-south.cf.appdomain.cloud/api/v1/seeds")
-    .then(res => res.json())
-    .then(setResultado);
-
+  useEffect(() => {
+    fetch("http://farmtechlat3.us-south.cf.appdomain.cloud/api/v1/seeds")
+      .then(res => res.json())
+      .then(setResultado);
+  }, []);
   console.log(resultado);
-
   return (
     <>
       {/* Hero section */}

@@ -1,3 +1,8 @@
+import SeedsCollection from "../components/SeedsColection";
+import TrayList from "../components/TrayList";
+import NewCultureForm from "../components/NewCultureForm";
+import EditCulture from "../components/EditCulture";
+import RiegoComponentsList from "../components/Riego";
 const Home = ({ user = "prueba" }) => {
   /*   const [resultado, setResultado] = useState();
 
@@ -13,42 +18,14 @@ const Home = ({ user = "prueba" }) => {
       <section className="flex flex-col justify-center items-center text-center space-y-10 mt-30">
         {/* Headlines */}
         <div className="space-y-4 max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-7xl font-bold">
+          <h1 className="font-bold">
             <span className=" text-green-600 block">Bievenido! {user}</span>
           </h1>
-          <h1 className="text-4xl sm:text-7xl font-bold">
-            <span className=" text-green-600 block">eGreens</span>
-          </h1>
-          <h1 className="text-4xl sm:text-7xl font-bold">
-            <span className=" text-green-600 block">eGreens</span>
-          </h1>
-          <h1 className="text-4xl sm:text-7xl font-bold">
-            <span className=" text-green-600 block">eGreens</span>
-          </h1>
-          <h1 className="text-4xl sm:text-7xl font-bold">
-            <span className=" text-green-600 block">eGreens</span>
-          </h1>
-          <h1 className="text-4xl sm:text-7xl font-bold">
-            <span className=" text-green-600 block">eGreens</span>
-          </h1>
-          <h1 className="text-4xl sm:text-7xl font-bold">
-            <span className=" text-green-600 block">eGreens</span>
-          </h1>
-          <h1 className="text-4xl sm:text-7xl font-bold">
-            <span className=" text-green-600 block">eGreens</span>
-          </h1>
-          <h1 className="text-4xl sm:text-7xl font-bold">
-            <span className=" text-green-600 block">eGreens</span>
-          </h1>
-          <h1 className="text-4xl sm:text-7xl font-bold">
-            <span className=" text-green-600 block">eGreens</span>
-          </h1>
-          <h1 className="text-4xl sm:text-7xl font-bold">
-            <span className=" text-green-600 block">eGreens</span>
-          </h1>
-          <h1 className="text-4xl sm:text-7xl font-bold">
-            <span className=" text-green-600 block">eGreens</span>
-          </h1>
+          <SeedsCollection />
+          <TrayList />
+          <NewCultureForm />
+          <EditCulture />
+          <RiegoComponentsList />
         </div>
       </section>
     </>
