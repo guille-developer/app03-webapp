@@ -1,7 +1,7 @@
-import { useState } from "react";
 import "./App.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Login from "./ibmlogin/Login";
+import useToken from "./hooks/useToken";
 import Home from "./pages/Home";
 import Pagina1 from "./pages/Pagina1";
 import Pagina2 from "./pages/Pagina2";
@@ -13,7 +13,7 @@ import EditCultureForm from "./components/EditCulture";
 import RiegoComponentsList from "./components/Riego";
 
 function App() {
-  const [token, setToken] = useState();
+  const { token, setToken } = useToken();
 
   if (!token) {
     return <Login setToken={setToken} />;
@@ -30,7 +30,7 @@ function App() {
             <Pagina2 />
           </Route>
           <Route path="/">
-            <Home />
+            <Home user={token.idTokenPayload.name} />
           </Route>
         </Switch>
       </Layout>

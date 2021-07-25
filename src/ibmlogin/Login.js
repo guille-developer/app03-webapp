@@ -25,14 +25,12 @@ function Login({ setToken }) {
 
   const [loginButtonDisplayState, setLoginButtonDisplayState] =
     React.useState(true);
-  const [userName, setUserName] = React.useState("");
 
   const loginAction = async () => {
     try {
       const tokens = await appID.signin();
       setErrorState(false);
       setLoginButtonDisplayState(false);
-      setUserName(tokens.idTokenPayload.name);
       setToken(tokens);
     } catch (e) {
       setErrorState(true);

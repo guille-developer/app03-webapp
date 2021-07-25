@@ -1,13 +1,11 @@
-import { useState } from "react";
-
-const Home = () => {
-  const [resultado, setResultado] = useState();
+const Home = ({ user = "prueba" }) => {
+  /*   const [resultado, setResultado] = useState();
 
   fetch("http://farmtechlat3.us-south.cf.appdomain.cloud/api/v1/seeds")
     .then(res => res.json())
     .then(setResultado);
 
-  console.log(resultado);
+  console.log(resultado); */
 
   return (
     <>
@@ -16,7 +14,7 @@ const Home = () => {
         {/* Headlines */}
         <div className="space-y-4 max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-7xl font-bold">
-            <span className=" text-green-600 block">HOME!</span>
+            <span className=" text-green-600 block">Bievenido! {user}</span>
           </h1>
           <h1 className="text-4xl sm:text-7xl font-bold">
             <span className=" text-green-600 block">eGreens</span>
