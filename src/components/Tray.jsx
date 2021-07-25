@@ -7,7 +7,7 @@ class Tray extends Component {
         let startDate = new Date(this.props.startDate);
         let date = startDate.getDay() + "/" + startDate.getMonth() + "/" + startDate.getFullYear();
         let progress = Math.round((12 * this.props.progress) / 100
-);
+        );
         return (
             <>
 
@@ -28,7 +28,7 @@ class Tray extends Component {
                     <div>
                         <div className="bg-white rounded-lg  shadow block p-4 m-auto">
                             <div className="w-full h-4 bg-gray-400 rounded-full mt-3">
-                                <div className={"w-" + progress+"/12 h-full text-center text-xs text-white bg-green-500 rounded-full"}>
+                                <div className={"w-" + progress + "/12 h-full text-center text-xs text-white bg-green-500 rounded-full"}>
                                     {this.props.progress}
                                 </div>
                             </div>
@@ -36,7 +36,7 @@ class Tray extends Component {
                     </div>
 
                     <div className="flex justify-between m-2">  <h1>Status: </h1>  <h1>{this.props.stage}</h1> </div>
-                    
+                   
 
 
 
